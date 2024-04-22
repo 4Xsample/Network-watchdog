@@ -1,0 +1,10 @@
+[Unit]
+Description=Network Monitor Service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/root/network_watchdog.sh
+
+[Install]
+WantedBy=multi-user.target
